@@ -74,8 +74,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var len_str1 = console.log(str1.length);
-  var len_str2 = console.log(str2.length);
+  var len_str1 = str1.length;
+  var len_str2 = str2.length;
   if (len_str1 === len_str2) {
     return true;
   }
@@ -203,7 +203,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var frase = nombre 
+  var frase = "Hola " + nombre + "!";
+  return frase;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -245,7 +246,24 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if (letra.length === 1) {
+    if (letra === 'a'){
+      return ("Es vocal");
+    }
+    if (letra === 'e'){
+      return ("Es vocal");
+    }
+    if (letra === 'i'){
+      return ("Es vocal");
+    }
+    if (letra === 'o'){
+      return ("Es vocal");
+    }
+    if (letra === 'u'){
+      return ("Es vocal");
+    }
+  }
+  return("Dato incorrecto");
 }
 
 
